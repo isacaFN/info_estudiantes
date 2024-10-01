@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Estudiantes</title>
+
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <main>
+        <section class="contendor-principal">
+
+            <div class="contenedor-formulario">
+                <section class="formulario">
+                            <div class="contenedor-input">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" name="nombre" id="nombre">
+                            </div>
+
+                            <div class="contenedor-input">
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" name="apellido" id="apellido">
+                            </div>
+
+                            <div class="contenedor-input">
+                                <label for="cedula">Cedula:</label>
+                                <input type="number" name="cedula" id="cedula">
+                            </div>
+
+                            <div class="contenedor-input">
+                                <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                                <input type="date" name="fecha-nacimiento" id="fecha-nacimiento">
+                            </div>  
+
+                            <div class="contenedor-input">
+                                <label for="sexo">Sexo:</label>
+                                <select name="sexo" id="sexo">
+                                    <option value="">Selecione una opcion</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="femenino">Femenino</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+
+                            <div class="contenedor-input">
+                                <label for="direccion">Direccion:</label>
+                                <input type="text" name="direccion" id="direccion">
+                            </div>
+
+
+                            <div class="materias">
+                                <div>
+                                    <p>notas</p>
+                                </div>
+                                <div class="materia">
+                                    <div>
+                                        <label for="nota1">Matematicas:</label>
+                                        <input type="number" name="nota1" id="nota1"></input>
+                                    </div>
+
+                                    <div>
+                                        <label for="nota2">Ingles:</label>
+                                        <input type="number" name="nota2" id="nota2"></input>
+                                    </div>
+
+
+                                    <div>
+                                        <label for="nota3">Historia</label>
+                                        <input type="number" name="nota3" id="nota3"></input>
+                                    </div>
+
+                                    <div>
+                                        <label for="nota4">Biologia</label>
+                                        <input type="number" name="nota4" id="nota4"></input>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contenedor-boton">
+                                <button type="submit" onclick="agregar()">Enviar</button>
+                            </div>
+
+                </section>
+            </div>
+
+            <div>
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Cedula</th>
+                            <th>Edad</th>
+                            <th>Promedio</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="cuerpotabla">
+                    </tbody>
+                </table>
+            
+            </div>
+        </section>
+
+        <section class="contendor" id="modal-datos">
+
+        </section>
+
+        
+    </main>
+    <script src="./script/index.js"></script>
+</body>
+</html>
